@@ -39,16 +39,15 @@ const subirTarea = () => {
 
 const eliminarTarea = (event) => {
 
-   for(let i = 0; i < ol.childNodes.length; i ++){
-      if(event.target.parentNode == ol.childNodes[i]){
-         event.target.parentNode.remove()
-      }
+   if(confirm("Seguro que desea eliminar la tarea?") == true){
+      for(let i = 0; i < ol.childNodes.length; i ++){
+         if(event.target.parentNode == ol.childNodes[i]){
+            event.target.parentNode.remove()
+         }
+      }   
    }
 }
    
-//    if(confirm("Seguro que desea eliminar la tarea?") == true){
-//       console.log("first")
-// }
-
+  
 
       
