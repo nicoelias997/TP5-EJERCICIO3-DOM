@@ -18,38 +18,17 @@
     </header>
     <main class="container d-flex mt-2 col col-12">
 
-        <div class="container d-flex align-items-ce col-7">
+        <div class="container d-flex align-items-center col-7">
             <div class="input-group row"> 
-                <textarea title="description" class="rounded-2" placeholder="Escriba una description" id="descriptionTarea" cols="30" rows= "8"></textarea>
-                <input type="file" class="form-control" id="tarea" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="subirTarea()">Subir tarea</button>
+                <input type="text" class="form-control rounded-2 mb-1 border-secondary" placeholder="Escriba su tarea" aria-label="Recipient's username" aria-describedby="button-addon2"
+                id="tarea">
+                <textarea title="description" class="rounded-2 mb-1 border-secondary" placeholder="Escriba una description" id="descriptionTarea" cols="30" rows= "12"></textarea>
+                <button class="btn btn-outline-secondary rounded-2 mb-1" type="button" id="inputGroupFileAddon04" onclick="subirTarea()">Subir tarea</button>
             </div>
         </div>
 
-            <div class="input-group container col-5 d-flex justify-content-start">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold titulo">Tarea1</div>
-                       <p>Descripcion</p> 
-                      </div>
-                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold titulo">Tarea2</div>
-                       <p>Descripcion</p> 
-                      </div>
-                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold titulo">Tarea3</div>
-                       <p>Descripcion</p> 
-                      </div>
-                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
-                    </li>
-                  </ol>
+            <div class="input-group container col-5 d-flex justify-content-start" id="lista">
+                <h6>Su lista de actividades es:</h6>
             </div>
 
     </main>
