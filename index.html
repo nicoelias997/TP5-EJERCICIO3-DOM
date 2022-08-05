@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicio 3, comision 7i, js, DOM">
+    <meta name="keywords" content="js, dom">
+    <meta name="author" content="nicoelias997">
+    <title>Ejercicio 3 - DOM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="bg-danger d-flex align-items-center justify-content-center rounded p-4 vh-20">
+            <h1 class="bg-gradient rounded-3 p-2">Comision 7i</h1>
+        </div>     
+    </header>
+    <main class="container d-flex mt-2 col col-12">
+
+        <div class="container d-flex align-items-ce col-7">
+            <div class="input-group row"> 
+                <textarea title="description" class="rounded-2" placeholder="Escriba una description" id="descriptionTarea" cols="30" rows= "8"></textarea>
+                <input type="file" class="form-control" id="tarea" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="subirTarea()">Subir tarea</button>
+            </div>
+        </div>
+
+            <div class="input-group container col-5 d-flex justify-content-start">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold titulo">Tarea1</div>
+                       <p>Descripcion</p> 
+                      </div>
+                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold titulo">Tarea2</div>
+                       <p>Descripcion</p> 
+                      </div>
+                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold titulo">Tarea3</div>
+                       <p>Descripcion</p> 
+                      </div>
+                      <button class="btn-close-danger border-white " onclick="eliminarTarea()">x</button>
+                    </li>
+                  </ol>
+            </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="/js/ejrecicio3.js"></script>
+</body>
+</html>
